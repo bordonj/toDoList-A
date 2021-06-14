@@ -5,41 +5,41 @@
     <link href="css/styles.css" rel="stylesheet" type="text/css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="js/scripts.js"></script>
-    <title>Address Book</title>
+    <title>To Do List</title>
     <title></title>
   </head>
   <body>
     <div class="container">
-      <h1>Address Book</h1>
+      <h1>To Do List</h1>
       <div class="row">
         <div class="col-md-6">
           <hr>
-          <h2>Add a Contact:</h2>
-          <form id="new-contact">
+          <h2>Add a New Task:</h2>
+          <form id="new-task">
             <div class="form-group">
-              <label for="new-first-name">First Name</label>
-              <input type="text"  class="form-control" id="new-first-name">
+              <label for="taskName">Task Name:</label>
+              <input type="text"  class="form-control" id="taskName">
             </div>
             <div class="form-group">
-              <label for="new-last-name">Last Name</label>
-              <input type="text"  class="form-control" id="new-last-name">
+              <label for="description">Description:</label>
+              <textarea class="form-control" id="description"></textarea>
             </div>
             <div class="form-group">
-              <label for="new-phone-number">Phone Number</label>
-              <input type="text"  class="form-control" id="new-phone-number">
+              <label for="dueDate">Due date:</label>
+              <input type="date" id="dueDate" name="trip-start" class="form-control">
             </div>
-            <button type="submit" class="btn-primary">Add</button>
+            <button type="submit" class="btn-primary">Add Task</button>
           </form>
           <hr>
-          <h2>Contacts:</h2>
-          <ul id="contacts">
+          <h2>Tasks:</h2>
+          <ul id="taskList">
           </ul>
         </div>
         <div class="col-md-6">
           <div id="show-contact">
-            <p>First Name: <span class="first-name"></span></p>
-            <p>Last Name: <span class="last-name"></span></p>
-            <p>Phone Number: <span class="phone-number"></span></p>
+            <p>Task Name: <span class="first-name"></span></p>
+            <p>Description: <span class="last-name"></span></p>
+            <p>Due Date: <span class="phone-number"></span></p>
             <div id="buttons">
             </div>
           </div>
