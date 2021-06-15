@@ -76,8 +76,7 @@ function showTask (taskId) {
     $('.dueDate').html(`<span class='${task.id} done'>${task.dueDate}</span>`);
     let buttons = $('#buttons');
     buttons.empty();
-    buttons.append(`<button class='deleteButton' id='${task.id}'>Delete</button>`);
-    buttons.append(`<button class='finishTask' id='${task.id}'>Done</button>`);
+    buttons.append(`<button class='deleteButton btn btn-dark' id='${task.id}'>Delete</button>`);
   }
   
 }
@@ -102,6 +101,7 @@ $(document).ready(function() {
   attachTaskListeners();
   $('form#new-task').submit(function(event) {
     event.preventDefault();
+    $('#taskList').show();
     let taskInput = $('input#taskName').val();
     let descriptionInput = $('textarea#description').val();
     let dueDateInput = $('input#dueDate').val();

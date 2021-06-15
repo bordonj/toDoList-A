@@ -7,8 +7,11 @@ body {
   text-decoration: line-through;
   color: rgb(112, 54, 79);
 }
+.form-control {
+  width: 50%;
+}
 
-#show-tasks {
+#show-tasks, #taskList {
   display: none;
 }
 
@@ -36,7 +39,8 @@ b {
 #show-tasks, #taskList {
   background-color: rgba(255, 255, 255, 0.397);
   padding: 5%;
-  font-size: xx-large
+  font-size: xx-large;
+  width: 100%;
 }
 
 /* #show-tasks {
