@@ -1,7 +1,13 @@
-body {
+body, html {
   background-image: url(https://images.pexels.com/photos/5417675/pexels-photo-5417675.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260);
   background-size: cover;
+  background-position: center;
+  background-repeat:no-repeat;
+  overflow: auto;
   color: white;
+  height: 100%;
+  margin: 0;
+  padding: 0;
 }
 .done {
   text-decoration: line-through;
