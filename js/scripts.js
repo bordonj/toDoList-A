@@ -4,7 +4,7 @@ function TaskList() {
   this.currentId = 0;
 }
 
-TaskList.prototype.addTask = function (task) {
+TaskList.prototype.addTask = function(task) {
   task.id = this.assignId();
   this.tasks[task.id] = task;
 };
@@ -67,8 +67,8 @@ function showTask (taskId) {
     $('.dueDate').html(`<span class='${task.id}'>${task.dueDate}</span>`);
     let buttons = $('#buttons');
     buttons.empty();
-    buttons.append(`<button class='deleteButton' id='${task.id}'>Delete</button>`)
-    buttons.append(`<button class='finishTask' id='${task.id}'>Done</button>`)
+    buttons.append(`<button class='deleteButton btn btn-dark' id='${task.id}'>Delete</button>`)
+    buttons.append(`<button class='finishTask btn btn-dark' id='${task.id}'>Done</button>`)
   } else {
     $('#show-tasks').show();
     $('.taskName').html(`<span class='${task.id} done'>${task.taskName}</span>`);

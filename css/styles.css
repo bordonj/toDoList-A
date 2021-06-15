@@ -1,7 +1,44 @@
+body {
+  background-image: url(https://images.pexels.com/photos/5417675/pexels-photo-5417675.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260);
+  background-size: cover;
+  color: white;
+}
 .done {
   text-decoration: line-through;
+  color: rgb(112, 54, 79);
 }
 
 #show-tasks {
   display: none;
 }
+
+#taskList {
+  font-size: xx-large;
+}
+
+h1, h2 {
+  color: pink;
+  text-shadow: 2px 3px black;
+}
+button {
+  margin-right: 15px;
+}
+ul {
+  list-style: none;
+}
+ul li {
+  color: rgb(0, 0, 0);
+  text-shadow: 2px 3px pink;
+}
+b {
+  color:rgb(84, 84, 84);
+}
+#show-tasks, #taskList {
+  background-color: rgba(255, 255, 255, 0.397);
+  padding: 5%;
+  font-size: xx-large
+}
+
+/* #show-tasks {
+  color: black;
+} */
